@@ -1,7 +1,7 @@
 import exec from "cordova/exec";
 
-exports.requestCapturePermission = (config, success, error) => {
-	exec(success, error, "PermissionManagement", "requestCapturePermission", [
-		config,
-	]);
+exports.requestPermission = (key = "CAPTURE", config, success, error) => {
+  exec(success, error, "PermissionManagement", "coolMethod", [
+    config,
+  ]);
 };
