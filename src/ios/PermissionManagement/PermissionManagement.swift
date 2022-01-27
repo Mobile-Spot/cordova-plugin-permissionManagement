@@ -64,7 +64,7 @@ import CoreLocation
 
                 let settingsAction = UIAlertAction(title: goSettingModalOk, style: .default) { (_) -> Void in
 
-                    guard let settingsUrl = URL(string: UIApplicationOpenSettingsURLString) else {
+                    guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
                         return
                     }
 
@@ -144,7 +144,7 @@ import CoreLocation
 
                     let settingsAction = UIAlertAction(title: goSettingModalOk, style: .default) { (_) -> Void in
 
-                        guard let settingsUrl = URL(string: UIApplicationOpenSettingsURLString) else {
+                        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
                             return
                         }
 
